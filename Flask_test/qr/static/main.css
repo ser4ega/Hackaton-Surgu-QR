@@ -1,0 +1,349 @@
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+    height: -webkit-fill-available;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  .bg-steel {
+    background-color: #5f788a;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    color: #444444;
+  }
+  
+  a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+  }
+  
+  .article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+
+  /* ФНС */
+
+  /* home */
+  .offer {
+    display: flex;
+    align-items: center;
+  }
+
+  .offer-content h1 {
+    color: #001da0;
+    font-size: 37px;
+    font-weight: 900;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+
+  .offer-content p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  .offer-content a {
+    background: #0066b3;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 14px;
+    width: 218px;
+    display: block;
+    text-align: center;
+    padding: 17px 0;
+    transition: al 0.5s ease;
+    margin-top: 35px;
+  }
+
+  .offer-content a:hover {
+    background: #0079cf;
+  }
+
+  .triangles {
+    margin-left: auto;
+    margin-right: 81px;
+  }
+
+  .pictures {
+    margin-top: 25px;
+  }
+
+  .my_boks a {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    font-weight: 900;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    transition: al 0.5s ease;
+    width: calc(33% - 24px);
+    margin: 10px;
+    padding: 20px 10px;
+    margin-top: 30px;
+}
+
+  .my_boks a:hover {
+      background: #0079cf;
+  }
+
+  .footer {
+    width: 100%;
+    float: left;
+    padding: 1%;
+    background-color: #5f788a;
+    margin-top: 30px;
+  }
+
+  #social {
+    float: left;
+    width: 50%;
+  }
+
+  #social img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 5px;
+  }
+
+  #rights {
+    color: #cbd5db;
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 1.1em;
+  }
+
+  /* information */
+
+  .sidebar {
+    margin-top: 5px;
+    width: 110px; 
+    padding: 0 5px; 
+    float: left; 
+  }
+
+  .sidebar a{
+    color: #444444;
+  }
+
+  .info {
+    margin-left: 130px; 
+    padding: 10px; 
+    background: #fff; 
+    margin-top: -10px; 
+  }
+
+  /* services */
+
+  .content {
+    margin-left: 0; 
+    padding: 10px; 
+    background: #fafafa; 
+  }
+
+  .hide {
+      display: none; 
+  }
+
+  .hide + label ~ div{
+      display: none;
+  }
+
+  /* оформляем текст label */
+  .hide + label {
+      font-size: 25pt;
+      border-bottom: 1px dotted green;
+      padding: 0;
+      color: green;
+      cursor: pointer;
+      display: inline-block; 
+  }
+
+  /* вид текста label при активном переключателе */
+  .hide:checked + label {
+      color: red;
+      border-bottom: 0;
+  }
+
+  /* когда чекбокс активен показываем блоки с содержанием  */
+  .hide:checked + label + div {
+      display: block; 
+      background: #efefef;
+      -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+      -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+      box-shadow: inset 3px 3px 10px #7d8e8f;
+      padding: 10px; 
+  }
+
+  /* demo контейнер */
+  .demo {
+      margin: 5% 10%;
+      text-align: center;
+  }
+
+  /* Кнопка открытия модальное окна */
+  .button a {
+      color: #000000;
+      border: 1px solid #000000;
+      font-weight: 900;
+      font-size: 14px;
+      display: inline-block;
+      text-align: center;
+      transition: al 0.5s ease;
+      width: calc(33% - 24px);
+      padding: 10px 5px;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+
+  .button a:hover {
+      background: #09ff00;
+  }
+
+  /* Модальное окно */
+  .window {
+      position: absolute; 
+      width: 500px; 
+      margin-left: -270px; 
+      left: 52%; 
+      top: -100%; 
+      padding: 20px; 
+      background: #fff; 
+      z-index: 9999; 
+      transition: all 0.5s ease-in;
+  }
+
+  .window h3{
+    text-align: center;
+  }
+
+  .overflow { 
+      width: 100%; 
+      height: 100%; 
+      z-index: 9998;
+      background: rgba(0,0,0,0.7); 
+      position: fixed; 
+      top: 0;
+  }
+  /* Модальное окно end */
+
+  .back {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .back a{
+    color: #444444;
+  }
+
+  /* support */
+
+  /* p {
+    color: #080808;
+  } */
+
+  /* h2 {
+      font-size: 25px; 
+      color: #080808; 
+      margin-top: 30px; 
+      text-align: center;
+      text-shadow: 4px 4px 4px #aaa;
+  } */
+
+  .blok-center {
+      width: 500px;
+      /* Ширина блока */
+      height: 500px;
+      /* Высота блока */
+      margin: auto;
+      /* Отступ от блока */
+      top: 0;
+      /* Положение блока от верхнего края */
+      bottom: 0;
+      /* Положение блока от нижнего края */
+      left: 0;
+      /* Положение блока от левого края */
+      right: 0;
+      /* Положение блока от правого края */
+      background: #ffffff;
+      /* Цвет фона блока */
+      border: 1px solid silver;
+      /* Рамка блока */
+      padding: 10px;
+      /* Отступ внутри блока */
+      overflow: auto;
+      /* Полоса прокрутки */
+  }
+  
+  .blok-center a{
+    color: #444444;
+  }
+
+
+
+
+
